@@ -1,46 +1,156 @@
 * {
-  margin: 0%;
   padding: 0%;
   text-decoration: none;
+  margin: 0%;
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
-@import "path/to/font-awesome/less/font-awesome.less";
-
-header {
-  width: 100%;
-  height: 50px;
+/* structure of whole body and website */
+body {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4";
+}
+.box1 {
   background-color: #044779;
-  border: none;
-  z-index: 1;
-  position: fixed;
+  grid-area: box1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+.box2 {
+  background-color: white;
+  height: 9rem;
+  grid-area: box2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box3 {
+  background-color: yellow;
+  height: 12rem;
+  grid-area: box3;
+  display: flex;
+}
+.box4 {
+  background-color: green;
+  height: 15rem;
+  grid-area: box4;
+  display: flex;
+}
+/* structure for text styling */
 h1 {
   color: #ccc7c7;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  text-align: center;
-  padding: 5px;
-  z-index: 2;
+  margin-top: 5px;
 }
+.pone {
+  color: #ccc7c7;
+  padding-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+/* Buttons */
+.heart {
+  background-color: transparent;
+  border: none;
+  color: #ccc7c7;
+  margin-top: 5px;
+}
+.buttondiscover {
+  background-color: transparent;
+  color: #120e0e;
+  border: none;
+  font-family: ;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+}
+.buttonmen {
+  background-color: transparent;
+  color: #120e0e;
+  border: none;
+  font-family: ;
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40%;
+}
+.buttonladies {
+  background-color: transparent;
+  color: #120e0e;
+  border: none;
+  font-family: ;
+  font-size: 3rem;
+  align-content: center;
+  justify-content: center;
+  margin-top: 40%;
+}
+.buttonsearch {
+  background-color: white;
+  color: #473a3a;
+  border: 1px solid;
+  box-shadow: 1px 1px;
+  width: 200px;
+  height: 35px;
+  margin-top: 10%;
+  margin-right: 10%;
+  font-size: 1.8rem;
+}
+.buttoncart {
+  background-color: #044779;
+  height: 35px;
+  width: 200px;
+  border: none;
+  color: #ccc7c7;
+  text-align: right;
+  font-size: 1.8rem;
+  padding-right: 10px;
+}
+.iconcart {
+  padding-right: 2.9rem;
+}
+/* Navigation (core code taken from lecture notes,
+but has been altered. */
 nav {
   display: none;
-  z-index: 2;
-}
-#hamburger-menu:checked ~ nav {
-  display: block;
-  align-self: baseline;
-  justify-content: space-around;
-  color: #ccc7c7;
-  font-size: 2rem;
-  background-color: white;
 }
 #hamburger-menu {
   display: none;
 }
-
-label[for="hamburger-menu"] {
-  padding: 8px;
-  font-size: 2rem;
+#hamburger-menu:checked ~ nav {
+  display: block;
   color: #ccc7c7;
+  background-color: #044779;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  list-style: none;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 5px;
+  z-index: 5;
 }
-@media (max-width: 768px) {
+.burger {
+  color: #ccc7c7;
+  margin-top: 5px;
+  justify-content: left;
+  z-index: 5;
+}
+.buttonnav {
+  background-color: #044779;
+  color: #ccc7c7;
+  font-size: 2rem;
+  border: none;
+  flex-direction: column;
+}
+/* box 2 css styling */
+.logo {
+  width: 80%;
+  height: auto;
 }
