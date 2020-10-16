@@ -30,10 +30,12 @@ body {
   justify-content: space-between;
 }
 .box3 {
-  background-color: yellow;
-  height: 12rem;
+  background-color: white;
+  height: 70rem;
   grid-area: box3;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .box4 {
   background-color: green;
@@ -50,9 +52,11 @@ h1 {
 .pone {
   color: #ccc7c7;
   padding-left: 2rem;
+  padding-right: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
+
 /* Buttons */
 .heart {
   background-color: transparent;
@@ -99,7 +103,7 @@ h1 {
   height: 35px;
   margin-top: 10%;
   margin-right: 10%;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .buttoncart {
   background-color: #044779;
@@ -108,11 +112,11 @@ h1 {
   border: none;
   color: #ccc7c7;
   text-align: right;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-right: 10px;
 }
 .iconcart {
-  padding-right: 2.9rem;
+  padding-right: 4rem;
 }
 /* Navigation (core code taken from lecture notes,
 but has been altered. */
@@ -153,4 +157,30 @@ nav {
 .logo {
   width: 80%;
   height: auto;
+}
+/* box 3 css styling */
+.hero1 {
+  position: relative;
+  text-align: center;
+  color: #ccc7c7;
+}
+.herotit {
+  color: white;
+  border: 2px;
+  border-color: #ccc7c7;
+  font-size: 3.2rem;
+  font-family: opens sans-serif;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.herotxt {
+  position: absolute;
+  color: white;
+  border: 1px;
+  border-color: #ccc7c7;
+  font-size: 2rem;
+  top: 6rem;
+  left: 1rem;
+  text-align: left;
 }
