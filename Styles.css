@@ -5,6 +5,7 @@
   box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* structure of whole body and website */
 body {
   display: grid;
@@ -12,7 +13,9 @@ body {
     "box1"
     "box2"
     "box3"
-    "box4";
+    "box4"
+    "box5"
+    "footer";
 }
 .box1 {
   background-color: #044779;
@@ -20,6 +23,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
 }
 .box2 {
   background-color: white;
@@ -31,23 +36,52 @@ body {
 }
 .box3 {
   background-color: white;
-  height: 70rem;
+  height: 57rem;
   grid-area: box3;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .box4 {
-  background-color: green;
-  height: 15rem;
+  background-color: white;
+  height: 3rem;
   grid-area: box4;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.box5 {
+  background-color: white;
+  height: 35rem;
+  grid-area: box5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #044779;
+  color: #ccc7c7;
+  height: 11rem;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /* structure for text styling */
 h1 {
   color: #ccc7c7;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 5px;
+}
+h2 {
+  color: #044779;
+  font-size: 3rem;
+  justify-content: center;
+  font-family: ;
+}
+h3 {
+  text-align: center;
+  margin-top: 5%;
 }
 .pone {
   color: #ccc7c7;
@@ -72,7 +106,7 @@ h1 {
   font-size: 3rem;
   align-items: center;
   justify-content: center;
-  margin-top: 40%;
+  margin-top: 1rem;
 }
 .buttonmen {
   background-color: transparent;
@@ -82,7 +116,7 @@ h1 {
   font-size: 3rem;
   align-items: center;
   justify-content: center;
-  margin-top: 40%;
+  margin-top: 1rem;
 }
 .buttonladies {
   background-color: transparent;
@@ -92,7 +126,7 @@ h1 {
   font-size: 3rem;
   align-content: center;
   justify-content: center;
-  margin-top: 40%;
+  margin-top: 1rem;
 }
 .buttonsearch {
   background-color: white;
@@ -151,12 +185,13 @@ nav {
   color: #ccc7c7;
   font-size: 2rem;
   border: none;
-  flex-direction: column;
+  display: block;
 }
+
 /* box 2 css styling */
 .logo {
-  width: 80%;
-  height: auto;
+  height: 9rem;
+  width: 10rem;
 }
 /* box 3 css styling */
 .hero1 {
@@ -183,4 +218,85 @@ nav {
   top: 6rem;
   left: 1rem;
   text-align: left;
+}
+.heroimg {
+  height: 100%;
+  width: 100%;
+}
+
+/* Box 4 styling */
+.carticon {
+  float: right;
+  padding-right: 5%;
+}
+.hrticon {
+  float: right;
+  padding-right: 5%;
+}
+.card {
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.jacketimg {
+  height: 50%;
+  width: 80%;
+}
+.jacketthree {
+  height: 44%;
+  margin-top: 5%;
+}
+.price {
+  color: #044779;
+  font-size: 2rem;
+  text-align: center;
+}
+.pricethree {
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: #044779;
+}
+.inftxt {
+  color: #120e0e;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btnadd {
+  background-color: #044779;
+  height: 2rem;
+  width: 12rem;
+  border: 1px #ccc7c7 solid;
+  border-radius: 1rem;
+  color: #ccc7c7;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+.btnwish {
+  background-color: #ccc7c7;
+  height: 2rem;
+  width: 12rem;
+  border: 1px #044779 solid;
+  border-radius: 1rem;
+  color: #044779;
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+/* fotter styling */
+.cardfooter {
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.lifooter {
+  text-align: left;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 1rem;
 }
