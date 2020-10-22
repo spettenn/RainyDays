@@ -5,7 +5,6 @@
   box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* structure of whole body and website */
 body {
   display: grid;
@@ -36,11 +35,12 @@ body {
 }
 .box3 {
   background-color: white;
-  height: 57rem;
+  height: 40rem;
   grid-area: box3;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  position: relative;
 }
 .box4 {
   background-color: white;
@@ -90,7 +90,6 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
 }
-
 /* Buttons */
 .heart {
   background-color: transparent;
@@ -132,7 +131,7 @@ h3 {
   background-color: white;
   color: #473a3a;
   border: 1px solid;
-  box-shadow: 1px 1px;
+  box-shadow: none;
   width: 200px;
   height: 35px;
   margin-top: 10%;
@@ -173,10 +172,12 @@ nav {
   overflow: hidden;
   border-radius: 5px;
   z-index: 5;
+  text-decoration: underline;
 }
 .burger {
   color: #ccc7c7;
   margin-top: 5px;
+  margin-left: 5px;
   justify-content: left;
   z-index: 5;
 }
@@ -187,17 +188,39 @@ nav {
   border: none;
   display: block;
 }
-
 /* box 2 css styling */
 .logo {
   height: 9rem;
   width: 10rem;
 }
 /* box 3 css styling */
-.hero1 {
-  position: relative;
-  text-align: center;
-  color: #ccc7c7;
+.heroone {
+  background-image: url("Image\ 35.png");
+  background-color: #cccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%px;
+  width: 34%;
+  border: none;
+}
+.herotwo {
+  background-image: url("Image\ 36.png");
+  background-color: #cccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 34%;
+}
+.herothree {
+  background-image: url("Image\ 37.png");
+  background-color: #cccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 34%;
 }
 .herotit {
   color: white;
@@ -205,16 +228,17 @@ nav {
   border-color: #ccc7c7;
   font-size: 3.2rem;
   font-family: opens sans-serif;
-  position: absolute;
-  top: 0.5rem;
+  position: right;
+  margin: 5%;
   left: 1rem;
 }
 .herotxt {
-  position: absolute;
+  position: right;
   color: white;
   border: 1px;
   border-color: #ccc7c7;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  margin: 4%;
   top: 6rem;
   left: 1rem;
   text-align: left;
@@ -223,8 +247,7 @@ nav {
   height: 100%;
   width: 100%;
 }
-
-/* Box 4 styling */
+/* Box 5 styling */
 .carticon {
   float: right;
   padding-right: 5%;
@@ -239,6 +262,7 @@ nav {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 .jacketimg {
   height: 50%;
@@ -246,7 +270,7 @@ nav {
 }
 .jacketthree {
   height: 44%;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .price {
   color: #044779;
@@ -300,3 +324,4 @@ nav {
   margin: 0.5rem;
   padding: 1rem;
 }
+@media (max-width: 600px);
