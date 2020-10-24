@@ -5,6 +5,7 @@
   box-shadow: none;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* structure of whole body and website */
 body {
   display: grid;
@@ -52,11 +53,13 @@ body {
 }
 .box5 {
   background-color: white;
+  position: relative;
   height: 35rem;
   grid-area: box5;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  flex-direction: column;
+  grid-template-areas: "card card card card card";
+  justify-content: space-evenly;
 }
 .footer {
   background-color: #044779;
@@ -85,9 +88,7 @@ h3 {
 }
 .pone {
   color: #ccc7c7;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
   font-size: 1.5rem;
 }
 /* Buttons */
@@ -96,6 +97,16 @@ h3 {
   border: none;
   color: #ccc7c7;
   margin-top: 5px;
+}
+.navButtons {
+  background-color: transparent;
+  color: #120e0e;
+  border: none;
+  font-family: ;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
 .buttondiscover {
   background-color: transparent;
@@ -190,12 +201,12 @@ nav {
 }
 /* box 2 css styling */
 .logo {
-  height: 9rem;
-  width: 10rem;
+  height: auto;
+  width: 85%;
 }
 /* box 3 css styling */
 .heroone {
-  background-image: url("Image\ 35.png");
+  background-image: url("images/Image\ 35.png");
   background-color: #cccc;
   background-size: cover;
   background-position: center;
@@ -205,7 +216,7 @@ nav {
   border: none;
 }
 .herotwo {
-  background-image: url("Image\ 36.png");
+  background-image: url("images/Image\ 36.png");
   background-color: #cccc;
   background-size: cover;
   background-position: center;
@@ -214,7 +225,7 @@ nav {
   width: 34%;
 }
 .herothree {
-  background-image: url("Image\ 37.png");
+  background-image: url("images/Image\ 37.png");
   background-color: #cccc;
   background-size: cover;
   background-position: center;
@@ -258,24 +269,23 @@ nav {
 }
 .card {
   border: none;
-  display: flex;
+  display: grid;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 .jacketimg {
-  height: 50%;
-  width: 80%;
+  size: cover;
 }
 .jacketthree {
-  height: 44%;
-  margin-top: 6%;
+  size: cover;
 }
 .price {
   color: #044779;
   font-size: 2rem;
   text-align: center;
+  margin-bottom: 0.2rem;
 }
 .pricethree {
   margin-top: 1rem;
@@ -309,7 +319,6 @@ nav {
   text-align: left;
   font-size: 1.2rem;
   padding: 0.3rem;
-  margin-top: 0.5rem;
 }
 /* fotter styling */
 .cardfooter {
@@ -324,4 +333,214 @@ nav {
   margin: 0.5rem;
   padding: 1rem;
 }
-@media (max-width: 600px);
+
+/* media queries (tablet)*/
+@media (max-width: 768px) {
+  .box2 {
+    background-color: white;
+    height: 7rem;
+    grid-area: box2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .box3 {
+    grid-template-areas: "Herotwo Herothree";
+  }
+  .box5 {
+    height: 90rem;
+    grid-template-areas: "card card";
+  }
+  .footer {
+    grid-template-areas: "cardfooter cardfooter";
+  }
+  .footer {
+    height: 13rem;
+  }
+  h1 {
+    color: #ccc7c7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .logo {
+    height: auto;
+    width: 70%;
+  }
+  .herotxt {
+    color: white;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 150%;
+  }
+  .heroone {
+    background-image: url("images/Image\ 35.png");
+    background-color: #cccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%px;
+    width: 50%;
+    border: none;
+  }
+  .herotwo {
+    display: none;
+  }
+  .herothree {
+    background-image: url("images/Image\ 37.png");
+    background-color: #cccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+  }
+  .buttondiscover {
+    background-color: transparent;
+    color: #120e0e;
+    border: none;
+    font-family: ;
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .buttonmen {
+    background-color: transparent;
+    color: #120e0e;
+    border: none;
+    font-family: ;
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .buttonladies {
+    background-color: transparent;
+    color: #120e0e;
+    border: none;
+    font-family: ;
+    font-size: 2rem;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .buttonsearch {
+    background-color: white;
+    color: #473a3a;
+    border: 1px solid;
+    box-shadow: none;
+    width: 150px;
+    height: 24px;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+  }
+  .buttoncart {
+    background-color: #044779;
+    height: 24px;
+    width: 150px;
+    border: none;
+    color: #ccc7c7;
+    text-align: right;
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+}
+/* Media queries (phone) */
+@media (max-width: 600px) {
+  .box1 {
+    height: 30px;
+    padding: 0%;
+  }
+  .box2 {
+    background-color: white;
+    height: 5rem;
+    grid-area: box2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .box3 {
+    grid-template-areas: "herothree";
+  }
+  .box5 {
+    height: 150rem;
+    grid-template-areas: "card";
+  }
+  h1 {
+    color: #ccc7c7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .pone {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .heart {
+    background-color: transparent;
+    border: none;
+    color: #ccc7c7;
+    margin-top: 0px;
+  }
+  .logo {
+    height: auto;
+    width: 50%;
+  }
+  .buttonladies {
+    display: none;
+  }
+  .buttonmen {
+    display: none;
+  }
+  .buttondiscover {
+    display: none;
+  }
+  .heroone {
+    display: none;
+  }
+  .herothree {
+    background-image: url("images/Image\ 37.png");
+    background-color: #cccc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+  .buttonsearch {
+    background-color: white;
+    color: #473a3a;
+    border: 1px solid;
+    box-shadow: none;
+    width: 150px;
+    height: 24px;
+    margin-top: 5%;
+    margin-right: 10%;
+    font-size: 1rem;
+  }
+  .buttoncart {
+    background-color: #044779;
+    height: 24px;
+    width: 150px;
+    border: none;
+    color: #ccc7c7;
+    text-align: right;
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+  .burger {
+    color: #ccc7c7;
+    margin-top: 2px;
+    margin-left: 2px;
+    justify-content: left;
+    z-index: 5;
+  }
+}

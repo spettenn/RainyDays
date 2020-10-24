@@ -1,0 +1,30 @@
+@import "styles.css";
+.btncart {
+  background-color: transparent;
+  border: none;
+  color: #ccc7c7;
+  margin-top: 5px;
+}
+main {
+  display: grid;
+  grid-template-rows: none;
+  grid-template-areas:
+    "box1C box1C box1C"
+    "box2C box2C box2C"
+    "box3C";
+}
+.box1C {
+  grid-area: box1C;
+  height: 100px;
+  width: 50%;
+}
+.box2C {
+  grid-area: box2C;
+  height: 100px;
+  width: 100%;
+}
+.box3C {
+  grid-area: box3C;
+  height: 100px;
+  width: 100%;
+}
