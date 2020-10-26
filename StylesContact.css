@@ -1,21 +1,167 @@
 @import "styles.css";
+
 .btncart {
-  background-color: transparent;
-  border: none;
+  background-color: #044779;
   color: #ccc7c7;
-  margin-top: 5px;
+  border: none;
+  margin: 5px;
+  padding: 0%;
 }
 .CU {
   grid-area: CU;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 .Smedia {
   grid-area: Smedia;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  text-align: center;
 }
 .blank {
   grid-area: blank;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+}
+.feedback {
+  grid-area: feedback;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "CU Smedia blank"
+    "feedback feedback feedback";
+}
+h2 {
+  color: black;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.CUlist {
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+}
+.licontact {
+  list-style: none;
+  padding: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  -webkit-padding-start: 0px;
+}
+#li_FB ion-icon {
+  font-size: 1em;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding-top: 9px;
+}
+span {
+  font-size: 1.5rem;
+  color: black;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.logo2 {
+  margin-top: 140px;
+  margin-right: 50px;
+  height: fit-content;
+  width: fit-content;
+}
+.liform {
+  margin: 30px;
+  list-style: none;
+}
+/*Text button code is from W3c, but have been edited to fit content */
+input[type="text"] {
+  width: 250px;
+  height: 30px;
+  padding: 8px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+}
+textarea {
+  width: 500px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+input[type="submit"] {
+  width: 150px;
+  height: 40px;
+  background-color: #044779;
+  color: #ccc7c7;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "CU Smedia"
+      "feedback feedback";
+  }
+  .liform {
+    margin: 20px;
+    list-style: none;
+  }
+  .logo2 {
+    display: none;
+  }
+  .licontact {
+    list-style: none;
+    padding: 20px;
+    -webkit-padding-start: 0px;
+    font-size: 1rem;
+  }
 }
 
-body {
-  display: grid;
-  grid-template-areas: "CU Smedia blank";
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "CU"
+      "Smedia"
+      "feedback feedback";
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .liform {
+    margin: 10px;
+    list-style: none;
+  }
+  .licontact {
+    list-style: none;
+    padding: 20px;
+    -webkit-padding-start: 0px;
+    font-size: 0.5rem;
+  }
+  h1 {
+    display: none;
+  }
 }
