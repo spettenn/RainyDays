@@ -1,11 +1,9 @@
 @import "styles.css";
 
 .btncart {
-  background-color: transparent;
-  color: #ccc7c7;
-  border: none;
   margin: 5px;
-  padding: 0%;
+  color: #ccc7c7;
+  background-color: #044779;
 }
 .CU {
   grid-area: CU;
@@ -124,6 +122,11 @@ input[type="submit"] {
     grid-template-areas:
       "CU Smedia"
       "feedback feedback";
+  }
+  .CUlist {
+    font-size: 1rem;
+    color: black;
+    margin: 7px;
   }
   .liform {
     margin: 20px;

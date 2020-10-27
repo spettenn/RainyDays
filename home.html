@@ -21,10 +21,14 @@
           <input type="checkbox" id="hamburger-menu" />
           <nav>
             <ul>
-              <button class="buttonnav">Discover</button>
-              <button class="buttonnav">ontact us</button>
-              <button class="buttonnav">About us</button>
-              <button class="buttonnav">My page</button>
+              <li><a href="discover.html" class="buttonnav">Discover</a></li>
+              <li><a href="contact.html" class="buttonnav">Contact us</a></li>
+              <li><a href="aboutus.html" class="buttonnav">About us</a></li>
+              <li><a href="mypage.html" class="buttonnav">My page</a></li>
+              <div class="mobileShow">
+                <li><a href="mens.html" id="NavPhone">Mens</a></li>
+                <li><a href="ladies.html" id="NavPhone">Ladies</a></li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -42,16 +46,12 @@
         <img class="logo" src="images/Logo RD`s.png" />
       </div>
       <div>
-        <button class="buttondiscover">Discover</button>
+        <ul id="ul_nav">
+          <li><a href="discover.html" class="ul_nav">DISCOVER</a></li>
+          <li><a href="mens.html" class="ul_nav">MENS</a></li>
+          <li><a href="ladies.html" class="ul_nav">LADIES</a></li>
+        </ul>
       </div>
-      <div>
-        <button class="buttonmen">Men</button>
-      </div>
-      <div>
-        <button class="buttonladies">Ladies</button>
-      </div>
-
-      <div></div>
       <div>
         <form>
           <input
@@ -62,7 +62,7 @@
           />
           <button type="submit"></button>
         </form>
-        <button class="buttoncart">
+        <button href="mycart.html" class="buttoncart">
           <i class="fas fa-shopping-cart fa-xs iconcart"></i>My Cart
         </button>
       </div>

@@ -75,6 +75,5 @@ main {
     grid-template-areas: "card";
   }
   .logo {
-    display: none;
   }
 }
