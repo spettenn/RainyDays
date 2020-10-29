@@ -9,6 +9,7 @@ body {
     "box4"
     "box5"
     "box6"
+    "box7"
     "footer";
 }
 .box2 {
@@ -31,6 +32,17 @@ body {
 .cartNav {
 margin-top: 8px;
 }
+.buttonsearch {
+    background-color: white;
+    color: #473a3a;
+    border: 1px solid;
+    box-shadow: none;
+    width: 200px;
+    height: 35px;
+    margin-top: 25%;
+    margin-right: 10%;
+    font-size: 1.5rem;
+  }
 .pone {
     margin-right: 10px;
     display: inline-block;
@@ -49,7 +61,7 @@ h2 {
 .box4 {
   background-color: white;
   position: relative;
-  height: 35rem;
+  height: 32rem;
   grid-area: box4;
   display: grid;
   flex-direction: row;
@@ -64,7 +76,7 @@ h2 {
 .box6 {
   background-color: white;
   position: relative;
-  height: 35rem;
+  height: 30rem;
   grid-area: box6;
   display: grid;
   flex-direction: row;
@@ -72,6 +84,17 @@ h2 {
   justify-content: space-between;
   border: 1px black solid;
 }
+.box7 {
+    background-color: white;
+    position: relative;
+    height: 30rem;
+    grid-area: box7;
+    display: grid;
+    flex-direction: row;
+    grid-template-areas: "card card card card card";
+    justify-content: space-between;
+    border: 1px black solid;
+  }
 
 .card {
   border: none;
@@ -126,6 +149,17 @@ h2 {
     grid-template-areas: "card card";
     justify-content: space-evenly;
   }
+  .box7 {
+    background-color: white;
+    position: relative;
+    height: 90rem;
+    grid-area: box7;
+    display: grid;
+    flex-direction: row;
+    grid-template-areas: "card card";
+    justify-content: space-evenly;
+    border: 1px black solid;
+  }
   #ul_nav {
     display: inline-block;
     list-style: none;
@@ -139,6 +173,10 @@ h2 {
     padding: 10px;
     margin-top: 13px;
     color: black;
+    text-decoration: none;
+  }
+  .buttonsearch {
+    margin-top: 20%;
   }
   .box2 {
     background-color: white;
@@ -161,6 +199,10 @@ h2 {
     height: 150rem;
     grid-template-areas: "card";
   }
+  .box7 {
+      height: 150rem;
+      grid-template-areas: "card";
+  }
   #ul_nav {
     display: none;
   }
@@ -168,5 +210,10 @@ h2 {
       font-size: 1rem;
       text-align: center;
   }
-  
+  .logoFooter {
+      display: none;
+  }
+    .cartNav {
+    font-size: 10px;
+    }   
 }

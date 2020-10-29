@@ -1,0 +1,49 @@
+@import "Styles.css";
+body {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5";
+}
+.box2 {
+  background-color: white;
+  height: 10rem;
+  grid-area: box2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.box3 {
+  background-color: white;
+  width: 70%;
+  height: 30rem;
+  grid-area: box3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-gap: 20, 0, 0, 0;
+}
+.logo {
+  align-content: center;
+}
+.CardCart {
+  width: 33%;
+  height: 10rem;
+  background-color: white;
+  text-align: center;
+}
+h2 {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+.card {
+  border: none;
+  display: grid;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+}

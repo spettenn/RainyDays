@@ -81,7 +81,6 @@ h2 {
   color: #044779;
   font-size: 3rem;
   justify-content: center;
-  font-family: ;
 }
 h3 {
   text-align: center;
@@ -147,6 +146,7 @@ but has been altered. */
   padding: 15px;
   margin-top: 13px;
   color: black;
+  text-decoration: none;
 }
 .mobileShow {
   display: none;
@@ -192,6 +192,9 @@ nav {
   font-size: 2rem;
   border: none;
   display: block;
+}
+.ul_nav:visited {
+  color: #044779;
 }
 /* box 2 css styling */
 .logo {
@@ -543,5 +546,8 @@ nav {
     font-size: 2rem;
     border: none;
     display: block;
+  }
+  .logoFooter {
+    display: none;
   }
 }
