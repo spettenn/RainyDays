@@ -36,6 +36,7 @@ body {
 .box3 {
   grid-area: box3;
   display: flex;
+  border: none;
 }
 .cardHeader {
   width: 25%;
@@ -159,5 +160,43 @@ h3 {
     font-size: 1rem;
     width: 2.5rem;
     margin-top: 5px;
+  }
+  #btnCxlP {
+    background-color: #044779;
+    border: solid 1px #ccc7c7;
+    color: #ccc7c7;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  .btnCxl {
+    display: none;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-left: 0rem;
+  }
+  .btnBack {
+    border: 1px solid;
+    background-color: #044779;
+    color: #ccc7c7;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 5px;
+    height: 4rem;
+    width: 3rem;
+  }
+  .btnPay {
+    border: 1px solid;
+    background-color: #044779;
+    color: #ccc7c7;
+    font-size: 1rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 0rem;
+  }
+  #fill {
+    display: none;
   }
 }
