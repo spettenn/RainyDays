@@ -51,16 +51,32 @@ main {
     justify-content: space-between;
   }
   .box4Disc {
+    width: 100%;
     height: 90rem;
     grid-template-areas: "card card";
   }
   .box5Disc {
+    width: 100%;
     height: 90rem;
     grid-template-areas: "card card";
   }
   .footer {
     grid-template-areas: "cardfooter cardfooter";
     height: 13rem;
+  }
+
+  h2 {
+    margin-left: 0rem;
+  }
+  #filler {
+    display: none;
+  }
+  #ul_nav {
+    margin-left: 0rem;
+  }
+  .buttonsearch {
+  }
+  .buttoncart {
   }
 }
 

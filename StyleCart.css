@@ -126,7 +126,7 @@ h3 {
   margin-top: 1.8rem;
 }
 .CartNav {
-  width: 33%;
+  width: 50%;
   height: auto;
 }
 .continue {
@@ -135,7 +135,7 @@ h3 {
   color: #ccc7c7;
   font-size: 1rem;
   margin-top: 2rem;
-  margin-left: 8rem;
+  margin-left: 28rem;
   border-radius: 8px;
   padding: 5px;
 }
@@ -145,14 +145,14 @@ h3 {
   color: #ccc7c7;
   font-size: 1.1rem;
   margin-top: 2rem;
-  margin-left: 8rem;
+  margin-left: 28rem;
   border-radius: 8px;
   padding: 5px;
 }
 .amnt {
   color: #044779;
   font-size: 1.5rem;
-  margin-left: 15rem;
+  margin-left: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -175,13 +175,13 @@ h3 {
     margin-top: 5px;
   }
   .qty {
-    margin-left: 2rem;
-    margin-top: 3.4rem;
+    margin-left: 0rem;
+    margin-top: 2.2rem;
   }
   .price {
     color: #044779;
     font-size: 1rem;
-    margin-top: 3.6rem;
+    margin-top: 2.6rem;
     margin-left: 2rem;
   }
   .btnCxl {
@@ -189,7 +189,7 @@ h3 {
     background-color: #044779;
     color: #ccc7c7;
     font-size: 1rem;
-    margin-top: 5rem;
+    margin-top: 2.2rem;
     margin-left: 2rem;
     border-radius: 8px;
     padding: 5px;
@@ -198,17 +198,46 @@ h3 {
     border: 1px solid;
     padding: 5px;
     font-size: 1rem;
-    margin-top: 1.2rem;
+    margin-top: 0.5rem;
     display: block;
   }
   .amnt {
     color: #044779;
     font-size: 1rem;
-    margin-left: rem;
-    display: block;
+    margin-left: 0rem;
+    display: inline-block;
   }
   .box4 {
     width: 100%;
     margin-left: 0%;
+  }
+  .continue {
+    margin-left: 0rem;
+    margin-top: 0rem;
+    float: right;
+  }
+  .shop {
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  #filla {
+    display: none;
+  }
+  .CartNav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #display {
+    display: none;
+  }
+  .CardCart {
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    padding: 6px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
