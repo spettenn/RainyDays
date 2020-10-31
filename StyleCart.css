@@ -181,7 +181,7 @@ h3 {
   .price {
     color: #044779;
     font-size: 1rem;
-    margin-top: 5.4rem;
+    margin-top: 3.6rem;
     margin-left: 2rem;
   }
   .btnCxl {
@@ -189,12 +189,26 @@ h3 {
     background-color: #044779;
     color: #ccc7c7;
     font-size: 1rem;
-    margin-top: 5.5rem;
+    margin-top: 5rem;
     margin-left: 2rem;
     border-radius: 8px;
     padding: 5px;
   }
-  i {
-    disp;
+  .totamt {
+    border: 1px solid;
+    padding: 5px;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    display: block;
+  }
+  .amnt {
+    color: #044779;
+    font-size: 1rem;
+    margin-left: rem;
+    display: block;
+  }
+  .box4 {
+    width: 100%;
+    margin-left: 0%;
   }
 }

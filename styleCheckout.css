@@ -1,0 +1,163 @@
+@import "Style.css";
+body {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3";
+}
+.box1 {
+  display: flex;
+  flex-direction: row;
+  grid-area: box1;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  height: 50rem;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-between;
+  background-color: white;
+  grid-area: box2;
+  position: relative;
+}
+.box3 {
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  width: 80%;
+  margin-left: 10%;
+  justify-content: space-between;
+  background-color: white;
+  grid-area: box3;
+  position: relative;
+}
+.box3 {
+  grid-area: box3;
+  display: flex;
+}
+.cardHeader {
+  width: 25%;
+  height: 11rem;
+}
+h1 {
+  color: #ccc7c7;
+  font-weight: normal;
+}
+h2 {
+  font-weight: normal;
+  color: #044779;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #044779;
+  margin-top: 0.4rem;
+  margin-left: 8rem;
+}
+.CardCart {
+  height: 15rem;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px;
+  padding: 6px;
+  display: flex;
+}
+.CardExit {
+  height: 10rem;
+  width: 25%;
+  background-color: white;
+  border-bottom: solid 1px;
+  padding: 6px;
+  display: flex;
+}
+
+.info {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+.sizes {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  margin-top: 30px;
+}
+.btnCxl {
+  border: 1px solid;
+  background-color: #044779;
+  color: #ccc7c7;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+
+  border-radius: 8px;
+  padding: 5px;
+  position: absolute;
+}
+.info {
+  width: 15%;
+}
+.filler {
+  width: 40%;
+}
+
+.btnBack {
+  border: 1px solid;
+  background-color: #044779;
+  color: #ccc7c7;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 5px;
+  height: 2rem;
+}
+.btnPay {
+  border: 1px solid;
+  background-color: #044779;
+  color: #ccc7c7;
+  font-size: 1rem;
+  height: 2rem;
+  border-radius: 8px;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .filler {
+    display: none;
+  }
+  h3 {
+    margin-left: 1rem;
+  }
+  .btnPay {
+    height: 3rem;
+  }
+  .btnCxl {
+    margin-left: 8rem;
+  }
+  #Cardimg {
+    max-height: 60%;
+    max-width: auto;
+  }
+}
+@media (max-width: 360px) {
+  .btnPay {
+    margin-left: 2rem;
+  }
+
+  h2 {
+    margin-left: 5rem;
+  }
+  .box2 {
+    margin-left: 0%;
+  }
+  .info {
+    font-size: 1.2rem;
+  }
+  .sizes {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 2.5rem;
+    margin-top: 5px;
+  }
+}
