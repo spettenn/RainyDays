@@ -1,9 +1,12 @@
 @import "styles.css";
 
-.btncart {
-  margin: 5px;
+.cartNav {
+  background-color: transparent;
   color: #ccc7c7;
-  background-color: #044779;
+  border: none;
+  margin-top: 0px;
+  margin-right: 10px;
+  display: inline-block;
 }
 .CU {
   grid-area: CU;
@@ -112,6 +115,7 @@ input[type="submit"] {
   height: 40px;
   background-color: #044779;
   color: #ccc7c7;
+  display: inline-block;
 }
 @media (max-width: 768px) {
   h2 {
