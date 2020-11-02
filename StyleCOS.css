@@ -65,8 +65,11 @@ body {
   background-color: #044779;
   font-size: 2rem;
   padding: 4px;
+  text-decoration: none;
 }
-
+a {
+  text-decoration: none;
+}
 h1 {
   font-size: 3rem;
   width: 30%;
@@ -200,7 +203,7 @@ h1 {
   text-align: right;
 }
 .pad {
-    display: none;
+  display: none;
 }
 @media (max-width: 768px) {
   body {
@@ -241,12 +244,11 @@ h1 {
     font-size: 2rem;
     padding: 4px;
   }
-  .pad{
-      display: block;
-      height: 3rem;
-      font-size: 2rem;
-      margin-top: 7rem;
-      margin-left: 20px;
-  }
+  .pad {
+    display: block;
+    height: 3rem;
+    font-size: 2rem;
+    margin-top: 7rem;
+    margin-left: 20px;
   }
 }

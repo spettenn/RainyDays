@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="My cart" content="A page showing items that are in your cart" />
     <link rel="stylesheet" href="StyleCart.css" />
     <script
       src="https://kit.fontawesome.com/7d8104ed11.js"
@@ -31,7 +32,7 @@
         <div><h1 href="home.html">HOME</h1></div>
         <div></div>
         <div>
-          <span class="pone" href="mypage.html">My page</span>
+          <span class="pone"><a href="mypage.html">My page</a></span>
         </div>
       </div>
     </header>
@@ -63,8 +64,8 @@
     </div>
     <div class="box4">
       <div class="CardCart">
-        <div class="CardImg">
-          <img alt="Rain Jackets" src="images/Jacket13.jpg" />
+        <div class="Cardimage">
+          <img alt="Rain Jackets" class="smthn" src="images/Jacket13.jpg" />
         </div>
         <div class="info">
           <span>Helli-Hansen - </span> <br />
@@ -76,33 +77,29 @@
             <button class="sizes">L</button>
             <button class="sizes">XL</button>
           </span>
-          <div>
-            <span class="rating">
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star"></i>
-            </span>
-          </div>
+
+          <span class="rating">
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star"></i>
+          </span>
         </div>
-        <div class="qty">
-          <button class="sizes">x1</button>
+
+        <div class="quantety">
+          <button class="qty">x1</button>
         </div>
         <div class="price">
           <span>2 100,- kr</span>
-        </div>
-        <div>
-          <span>
-            <button class="btnCxl">
-              <i class="far fa-times-circle"></i> Cancel
-            </button>
-          </span>
+          <button class="btnCxl">
+            <i class="far fa-times-circle"></i> Cancel
+          </button>
         </div>
       </div>
       <div class="CardCart">
-        <div class="CardImg">
-          <img alt="rain Jackets" src="images/Jacket12.jpg" />
+        <div class="Cardimage">
+          <img alt="rain Jackets" class="smthn" src="images/Jacket12.jpg" />
         </div>
         <div class="info">
           <span>Norrøna - </span> <br />
@@ -114,33 +111,29 @@
             <button class="sizes">L</button>
             <button class="sizes">XL</button>
           </span>
-          <div>
-            <span class="rating">
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </span>
-          </div>
+
+          <span class="rating">
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
         </div>
-        <div class="qty">
-          <button class="sizes">x1</button>
+        <div class="quantety">
+          <button class="qty">x1</button>
         </div>
         <div class="price">
           <span>1 500,- kr</span>
-        </div>
-        <div>
-          <span>
-            <button class="btnCxl">
-              <i class="far fa-times-circle"></i> Cancel
-            </button>
-          </span>
+
+          <button class="btnCxl">
+            <i class="far fa-times-circle"></i> Cancel
+          </button>
         </div>
       </div>
       <div class="CardCart">
-        <div class="CardImg">
-          <img alt="Rain Jackets" src="images/Jacket15.jpg" />
+        <div class="Cardimage">
+          <img alt="Rain Jackets" class="smthn" src="images/Jacket15.jpg" />
         </div>
         <div class="info">
           <span>Sail racing - </span> <br />
@@ -152,47 +145,48 @@
             <button class="sizes">L</button>
             <button class="sizes">XL</button>
           </span>
-          <div>
-            <span class="rating">
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-              <i class="fas fa-star stars"></i>
-            </span>
-          </div>
+          <span class="rating">
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+            <i class="fas fa-star stars"></i>
+          </span>
         </div>
-        <div class="qty">
-          <button class="sizes">x1</button>
+          <button class="qty">x1</button>
         </div>
         <div class="price">
           <span>3 100,- kr</span>
-        </div>
-        <div>
-          <span>
-            <button class="btnCxl">
-              <i class="far fa-times-circle"></i> Cancel
-            </button>
-          </span>
+
+          <button class="btnCxl">
+            <i class="far fa-times-circle"></i> Cancel
+          </button>
         </div>
       </div>
-      <div class="CardCart">
-        <div class="CartNav">
-          <span class="amnt"
-            >Total items: <button class="totamt">x3 items</button></span
-          >
-          <span class="amnt"
-            >Total amount: <button class="totamt">6 700,- kr</button></span
-          >
-          <div id="dislpay">
-            <button href="home.html" class="shop">Continue Shopping</button>
-          </div>
-          <div>
-            <button href="checkout.html" class="continue">
-              Continue to check-out
-            </button>
-          </div>
+    </div>
+    <div class="box5">
+      <div class="checkout">
+        <div>
+          <button href="home.html" class="shop">
+            <a href="discover.html">Continue Shopping</a>
+          </button>
         </div>
+      </div>
+
+      <div class="checkout">
+        <span class="amnt"
+          >Total items: <button class="totamt">x3 items</button></span
+        >
+      </div>
+      <div class="checkout">
+        <span class="amnt"
+          >Total amount: <button class="totamt">6 700,- kr</button></span
+        >
+      </div>
+      <div clas="checkout">
+        <button href="checkout.html" class="continue">
+          <a href="checkoutsuccess.html"> Continue to check-out </a>
+        </button>
       </div>
     </div>
   </body>
