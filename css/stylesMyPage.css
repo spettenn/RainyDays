@@ -1,4 +1,4 @@
-@import "styleAbout.css";
+@import "/css/StyleAbout.css";
 body {
   display: grid;
   grid-template-areas:
