@@ -5,7 +5,7 @@ async function getJackets() {
 console.log()
 
 try {
-const response = await fetch('https://api.skole.tech/wp-json/wc/store/products/lookup.php?i=' + id);
+const response = await fetch('https://api.skole.tech/wp-json/wc/store/products' + id);
 const jsonResults = await response.json();
 const value = jsonResults[0];
 

@@ -28,7 +28,11 @@ main {
   min-height: 40rem;
 }
 #Vproduct{
-  color:#044779;
+  border: gray;
+  background-color: #044779;
+  color: white;
+  border-radius: 6px;
+  padding: 3px;
 }
 #prices {
   color: #044779;
@@ -40,6 +44,7 @@ main {
   border: 1px solid #044779;
   padding-top: 3rem;
   margin: 15px;
+  text-align: center;
 }
 .card::hover {
   box-shadow: 5px 5px 5px 5px black;
