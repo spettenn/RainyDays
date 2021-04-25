@@ -10,8 +10,8 @@ async function getJackets() {
             <div><img src="${value.images.src}"/></div>
             <div>
                     <h3>${value.name}</h3>
-                    <p>£${value.prices.price}</p>
-                    <a href="details.html?id=${value.id}">View Product</a> 
+                    <p id="prices">£${value.prices.price}</p>
+                    <a id="Vproduct" href="details.html?id=${value.id}">View Product</a> 
                 </div>
             </div>
         `;

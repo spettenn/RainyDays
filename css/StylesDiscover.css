@@ -24,8 +24,15 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; 
   padding-top: 3rem;
+  min-height: 40rem;
+}
+#Vproduct{
+  color:#044779;
+}
+#prices {
+  color: #044779;
+  font-size: 1.5rem;
 }
 .card {
   width: 12rem;
