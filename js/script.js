@@ -11,7 +11,7 @@ async function getJackets() {
             <div>
                     <h3>${value.name}</h3>
                     <p>£${value.prices.price}</p>
-                    <a href="${value.add_to_cart.url}">Add to cart</a> 
+                    <a href="details.html?id=${value.id}">View Product</a> 
                 </div>
             </div>
         `;
